@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+*.user
+artifacts/
+TestResults/
+
+# Vue build 產出由前端專案提供，不進版控
+frontend/dist/*
+!frontend/dist/.gitkeep

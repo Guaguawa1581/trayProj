@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BackendTray.Agent/BackendTray.Agent.csproj" />
+    <Project Path="src/BackendTray.Contracts/BackendTray.Contracts.csproj" />
+    <Project Path="src/BackendTray.Core/BackendTray.Core.csproj" />
+    <Project Path="src/BackendTray.Gateway/BackendTray.Gateway.csproj" />
+    <Project Path="src/BackendTray.Manager/BackendTray.Manager.csproj" />
+    <Project Path="src/BackendTray.Service/BackendTray.Service.csproj" />
+  </Folder>
+  <Folder Name="/src/Servers/">
+    <Project Path="src/Servers/MainApi/MainApi.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BackendTray.Core.Tests/BackendTray.Core.Tests.csproj" />
+  </Folder>
+</Solution>

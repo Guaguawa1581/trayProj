@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>BackendTray.Manager</AssemblyName>
+    <RootNamespace>BackendTray.Manager</RootNamespace>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationDefaultFont>Microsoft JhengHei UI, 9pt</ApplicationDefaultFont>
+  </PropertyGroup>
+
+  <!--
+    Release 需要系統管理員權限（管理介面只開放給管理員）。
+    Debug 不要求，方便直接 F5 搭配以 dotnet run 執行的服務；但無法控制已安裝的服務。
+  -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackendTray.Contracts\BackendTray.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

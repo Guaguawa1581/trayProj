@@ -1,0 +1,28 @@
+{
+  "name": "backendtray-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --build && vite build",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --build",
+    "deploy": "npm run build && node scripts/deploy.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.44",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~5.9.3",
+    "vite": "^6.4.5",
+    "vue-tsc": "^3.3.13"
+  }
+}

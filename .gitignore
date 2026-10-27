@@ -1,0 +1,29 @@
+# 整個 repo 共用的規則；各子專案的建置產出由各自的 .gitignore 處理
+#   backendTray/.gitignore   bin/、obj/、artifacts/ 等
+#   frontendVue/.gitignore   node_modules/、dist/ 等
+
+# 作業系統
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# 編輯器 / IDE
+.vs/
+.idea/
+*.suo
+*.user
+*.swp
+/.vscode/*
+!/.vscode/extensions.json
+
+# 個人環境設定（共用的 .env 會進版控，個人覆寫不要）
+.env.local
+.env.*.local
+
+# Claude Code 個人設定
+.claude/settings.local.json
+
+# log
+*.log

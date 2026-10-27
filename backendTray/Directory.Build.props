@@ -1,0 +1,12 @@
+<Project>
+  <!-- 所有專案共用。版本號只在這裡改，build.ps1 與安裝程式都會讀這個值。 -->
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <Product>BackendTray</Product>
+    <Company>BackendTray</Company>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <SatelliteResourceLanguages>en;zh-Hant</SatelliteResourceLanguages>
+  </PropertyGroup>
+</Project>

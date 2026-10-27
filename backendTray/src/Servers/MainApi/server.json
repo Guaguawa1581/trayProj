@@ -1,0 +1,9 @@
+{
+  "id": "main-api",
+  "displayName": "主要 API",
+  "executable": "MainApi.exe",
+  "defaultPort": 5100,
+  "routePrefix": "/api",
+  "healthPath": "/health",
+  "connections": [ "Default" ]
+}

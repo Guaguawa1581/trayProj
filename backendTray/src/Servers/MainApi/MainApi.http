@@ -1,0 +1,53 @@
+@MainApi_HostAddress = http://localhost:5100
+
+GET {{MainApi_HostAddress}}/api/system/info
+Accept: application/json
+
+###
+
+GET {{MainApi_HostAddress}}/api/weatherforecast
+Accept: application/json
+
+###
+
+# 以下需要先執行 Database/CreateTestData.sql 並設定 ConnectionStrings:Default
+
+GET {{MainApi_HostAddress}}/api/products?category=飲料&page=1&pageSize=10
+Accept: application/json
+
+###
+
+GET {{MainApi_HostAddress}}/api/products/1
+Accept: application/json
+
+###
+
+POST {{MainApi_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "烏龍茶 600ml",
+  "category": "飲料",
+  "price": 29,
+  "stock": 50,
+  "isActive": true
+}
+
+###
+
+PUT {{MainApi_HostAddress}}/api/products/1
+Content-Type: application/json
+
+{
+  "name": "無糖綠茶 600ml",
+  "category": "飲料",
+  "price": 28,
+  "stock": 100,
+  "isActive": true
+}
+
+###
+
+DELETE {{MainApi_HostAddress}}/api/products/12
+
+###
